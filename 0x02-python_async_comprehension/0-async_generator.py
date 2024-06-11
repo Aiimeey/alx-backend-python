@@ -5,7 +5,7 @@ import random
 from typing import List
 
 
-async def async_generator() -> List[float]:
+async def async_generator() -> Generator[float, None, None]:
     """ coroutine that loops 10 times asynchronously wait 1 second,
         then yield a random number"""
     for _ in range(10):
